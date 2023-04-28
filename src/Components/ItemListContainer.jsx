@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import { useParams } from "react-router-dom";
+import React, {useState, useEffect} from 'react'
+import { useParams, useLocation } from "react-router-dom";
 import ItemList from './ItemList';
 import FiltrosITSU from './FiltrosITSU';
 import FiltrosIDVM from './FiltrosIDVM';
@@ -104,33 +104,44 @@ const habitaciones =[
 
 const ItemListContainer = () => {
     const { categoria } = useParams();
+    const location = useLocation();
+
     
     let opciones=habitaciones.filter((el)=>el.categoria===categoria)
-
+    
     const [boton, setBoton] = useState(false)
-
+    
     const [btnSillones, setBtnSillones] = useState(false)
-
+    
     const [btnDucha, setBtnDucha] = useState(false)
-
+    
     const [btnConvertible, setBtnConvertible] = useState(false)
-
+    
     const [btnInterna, setBtnInterna] = useState(false)
-
+    
     const[ btnConectada, setBtnConectada] = useState(false)
-
+    
     const filtrarInterna=()=>{setBtnInterna(!btnInterna)}
-
+    
     const filtrarDucha=()=>{setBtnDucha(!btnDucha)}
-
+    
     const filtrarConvertible=()=>{setBtnConvertible(!btnConvertible)}
-
+    
     const filtrarCategoria =()=>{setBoton(!boton)}
-
+    
     const filtrarSillon =()=>{setBtnSillones(!btnSillones)}
-
+    
     const filtrarConectadas =()=>{setBtnConectada(!btnConectada)}
-
+    
+    useEffect(() => {
+   // Actualiza el estado de myState a false cada vez que cambia la ruta
+   setBoton(false);
+   setBtnSillones(false);
+   setBtnDucha(false);
+   setBtnConvertible(false);
+   setBtnInterna(false);
+   setBtnConectada(false);
+  }, [location.pathname]);
     
     
     if (btnDucha){opciones=opciones.filter((el)=>el.ducha === true)}
@@ -151,12 +162,12 @@ const ItemListContainer = () => {
 
   return (
     <>
-    <div className='ItemListContainer'>
+    <div className={categoria ==="IDST" || categoria ==="IDWST"  || categoria ==="ISTE" || categoria ==="ISTE" || categoria ==="ITSTE" ? 'ItemListContenedor':'ItemListContainer'}>
       <div className='div-filtros'>
         { categoria === "ITSU" || categoria === "ITWS" ?
         <FiltrosITSU filtrarCategoria={filtrarCategoria} />
 
-        : categoria=== "IDST" || categoria===  "IDWST" || categoria===  "IDWSST" || categoria===  "IDSST" ? 
+        : categoria===  "IDWSST" || categoria===  "IDSST" ? 
         <FiltrosIDST filtrarConvertible={filtrarConvertible}
         filtrarInterna={filtrarInterna}  />
 
