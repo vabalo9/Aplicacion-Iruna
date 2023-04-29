@@ -1,17 +1,27 @@
 import React from 'react'
-const habitaciones =[
-    {habitacion:110,categoria:"ISVM",vista:"Frente del hotel",detalles:["Tiene hidromasaje"]},
-    {habitacion:307, categoria:"ISTE", vista:"A pulmon interno del hotel", detalles:["A diferencia de las otras Suites tiene la antesala es muy pequeña (no le entra otra cama)"]},
-    {habitacion:112, categoria:"IDVM", vista:"Frente del hotel", detalles:["Cuenta con dos sillones pequeños"]},
-    {habitacion:519, categoria:"IDSST", vista:"Pulmon interno del Hotel", detalles:["Queda al lado del office de las mucamas"]},
-    {habitacion:520, categoria:"IDWSST", vista:"Pulmon interno del Hotel", detalles:["Queda en frente del office de las mucamas"]},
-]
 
-const detalles=habitaciones.map((el)=>el)
+
+
 
 const Prueba = () => {
   return (
-    <div>Prueba</div>
+    <>
+    <div className='welcome'>
+      <h1 className='titulo-bienvenida'>Bienvenido al room asistance del Hote Iruña </h1>
+
+      <h4 className='titulo-indicativo'>Por favor en el menú superior indique la categoría a visualizar</h4>
+
+        <div className='imagenes-principal'>
+
+          <img className='imagen-itemDetail1' src="https://cdn.myportfolio.com/54edfd4d5ca547f9f270b64acc5645bd/26562d0ead773d6c949ca014_rw_1200.png?h=7446b7eac89ea7357499cd2d05449f80" />
+          <div className='imagenes'>
+            <img className='imagen-itemDetail' src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/82471672.jpg?k=095b3828a7d14cdc63a7d603e780faeae960d82ee350a2df777a92392330229c&o=&hp=1" /> 
+            <img className='imagen-itemDetail' src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_627,q_auto,w_1200/itemimages/21/89/218941_v8.jpeg" />
+            <img className='imagen-itemDetail' src="http://iruna.hotels-argentina.net/data/Pics/OriginalPhoto/12826/1282665/1282665646/iruna-hotel-mar-del-plata-pic-4.JPEG" />
+          </div>
+        </div>
+    </div>
+    </>
   )
 }
 

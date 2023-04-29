@@ -4,12 +4,80 @@
   box-sizing: border-box;
 }
 
+.welcome {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  background-color: bisque;
+  
+  flex-direction: column;
+  
+}
+
+.imagenes-principal {
+margin-top: 30px;
+margin-bottom: 50px;
+}
+
+.titulo-bienvenida {
+  font-size: 50px;
+  color: rgba(88, 14, 14, 0.432);
+}
+
+.titulo-indicativo {
+  font-size: 30px;
+}
+
+
+.imagen-itemDetail {
+  width: 400px;
+}
+
+.logo {
+  width: 90px;
+  margin-left: 30px;
+}
+
+.imagenes {
+  display: flex;
+  gap: 10px;
+}
+
+.imagen-itemDetail1 {
+  width: 1220px;
+  margin-bottom: 10px;
+}
 .navbar {
   display: flex;
-  justify-content: center;
+  
   align-items: center;
   height: 70px;
 }
+
+.navbar-links {
+  padding-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  
+}
+
+.navbar-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+
+.opcion1 {
+  padding-left: 80px;
+}
+
+.opcion2 {
+  padding-left: 160px;
+}
+
 
 .up {
   background-color: black;
@@ -39,6 +107,7 @@
   display: flex;
   align-items: center;
   padding-inline: 25px;
+  padding-block: 20px;
 }
 
 
@@ -73,13 +142,16 @@
   display: contents;
 }
 
-.container-products {
+
+ .container-products {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 150px; /* altura fija para los elementos */
+  gap: 50px;
   padding-block: 40px;
   padding-inline: 30px;
-  gap: 50px;
- }
+}
+
 
  .link {
   text-decoration: none;
@@ -94,15 +166,14 @@
  .ItemListContainer {
   display: flex;
   min-height: 100vh;
-  background-color: beige;
+  background-color: bisque;
  }
 
  .ItemListContenedor {
   display: flex;
-  
+  background-color: bisque;
   justify-content: center;
   min-height: 100vh;
-  background-color: beige;
  }
 
 
@@ -181,4 +252,13 @@
 }
  .invisible {
   display: none;
+ }
+
+ .titulo-categoria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 50px;
+  color: rgba(88, 14, 14, 0.432);
  }

@@ -4,8 +4,8 @@ import Switch from './Switch';
 
 const FiltrosIDVM = ({filtrarConvertible, filtrarDucha, filtrarSillon, filtrarInterna,filtrarConectadas}) => {
   const { categoria } = useParams();
-  let twin="Se puede convertir en doble twin"
-  let matrimonial="Se puede convertir en matrimonial"
+  let twin="Convertible en doble twin"
+  let matrimonial="Convertible en matrimonial"
   return (
     <>
     <p className='indicador'>Muestra únicamente las opciones la caracteristica mencionada</p>

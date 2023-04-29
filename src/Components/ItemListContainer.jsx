@@ -162,7 +162,7 @@ const ItemListContainer = () => {
 
   return (
     <>
-    <div className={categoria ==="IDST" || categoria ==="IDWST"  || categoria ==="ISTE" || categoria ==="ISTE" || categoria ==="ITSTE" ? 'ItemListContenedor':'ItemListContainer'}>
+    <div className={categoria ==="IDST" || categoria ==="IDWST"  || categoria ==="ISTE" || categoria ==="ISTE" || categoria ==="ITSTE" || categoria ==="ISVM" ? 'ItemListContenedor':'ItemListContainer'}>
       <div className='div-filtros'>
         { categoria === "ITSU" || categoria === "ITWS" ?
         <FiltrosITSU filtrarCategoria={filtrarCategoria} />
