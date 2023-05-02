@@ -8,8 +8,8 @@ const ItemList = ({opciones}) => {
   useEffect(() => {
     if (categoria==="IDST") {setTitulo("Categoria Standard matrimonial")}
     else if (categoria==="IDWST") {setTitulo("Categoria doble twin standard")}
-    else if (categoria==="IDSST") {setTitulo("Superior matrimonial")}
-    else if (categoria==="IDWSST") {setTitulo("Superior doble twin")}
+    else if (categoria==="IDSST") {setTitulo("Categoria Superior matrimonial")}
+    else if (categoria==="IDWSST") {setTitulo("Categoria Superior doble twin")}
     else if (categoria==="IDVM") {setTitulo("Categoria matrimonial Vista al mar")}
     else if (categoria==="IDWM") {setTitulo("Categoria doble twin Vista al mar")}
     else if (categoria==="ITSU") {setTitulo("Categoria Triple Matrimonial mas cama")}
