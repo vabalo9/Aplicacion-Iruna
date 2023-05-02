@@ -12,7 +12,7 @@ const ItemList = ({opciones}) => {
     else if (categoria==="IDWSST") {setTitulo("Categoria Superior doble twin")}
     else if (categoria==="IDVM") {setTitulo("Categoria matrimonial Vista al mar")}
     else if (categoria==="IDWM") {setTitulo("Categoria doble twin Vista al mar")}
-    else if (categoria==="ITSU") {setTitulo("Categoria Triple Matrimonial mas cama")}
+    else if (categoria==="ITSU") {setTitulo("Categoria Triple \n Matrimonial mas cama")}
     else if (categoria==="ITWS") {setTitulo("Categoria triple twin")}
     else if (categoria==="ISTE") {setTitulo("Categoria Junior Suite doble")}
     else if (categoria==="ITSTE") {setTitulo("Categoria Junior Suite triple")}

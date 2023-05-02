@@ -219,7 +219,12 @@ margin-bottom: 50px;
  }
 
  .div-filtros {
-  background-color: rgba(47, 45, 42, 0.441) ;
+  background-color: rgba(47, 45, 42, 0.441);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 150px;
 
 }
 
@@ -238,7 +243,17 @@ margin-bottom: 50px;
   margin-top: 20px;
   margin-left: 25px;
   margin-right: 0;
+  text-decoration: bold;
  }
+
+.item-detalles {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 0;
+}
 
 .detalles-categoria {
   color: aliceblue;
@@ -261,4 +276,8 @@ margin-bottom: 50px;
   margin-top: 30px;
   font-size: 50px;
   color: rgba(88, 14, 14, 0.432);
+ }
+
+ .padding {
+  padding-right: 50px;
  }
