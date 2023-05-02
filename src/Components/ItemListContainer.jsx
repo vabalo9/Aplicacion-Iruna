@@ -98,6 +98,13 @@ const habitaciones =[
     {habitacion:401,  categoria:"ITSTE", vista:"A pulmon interno del hotel",},
     {habitacion:405,  categoria:"ITSTE", vista:"A pulmon interno del hotel",},
 
+    {habitacion:205,  categoria:"IDEP",},
+    {habitacion:101,  categoria:"IDEP",},
+    {habitacion:303,  categoria:"IDEP",},
+    {habitacion:201,  categoria:"IDEP",},
+    {habitacion:403,  categoria:"IDEP",},
+    {habitacion:105,  categoria:"IDEP",},
+
     {habitacion:110, categoria:"ISVM",vista:"Frente del hotel",detalles:["Tiene hidromasaje"]},
     {habitacion:210, categoria:"ISVM",vista:"Frente del hotel",detalles:["Tiene hidromasaje"]},
 ]
@@ -162,7 +169,7 @@ const ItemListContainer = () => {
 
   return (
     <>
-    <div className={categoria ==="IDST" || categoria ==="IDWST"  || categoria ==="ISTE" || categoria ==="ISTE" || categoria ==="ITSTE" || categoria ==="ISVM" ? 'ItemListContenedor':'ItemListContainer'}>
+    <div className={categoria ==="IDST" || categoria ==="IDWST"  || categoria ==="ISTE" || categoria ==="ISTE" || categoria ==="ITSTE" || categoria ==="IDEP" || categoria ==="ISVM" ? 'ItemListContenedor':'ItemListContainer'}>
       <div className='div-filtros'>
         { categoria === "ITSU" || categoria === "ITWS" ?
         <FiltrosITSU filtrarCategoria={filtrarCategoria} />

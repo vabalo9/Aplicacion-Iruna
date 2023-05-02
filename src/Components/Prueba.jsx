@@ -17,7 +17,7 @@ const Prueba = () => {
           <div className='imagenes'>
             <img className='imagen-itemDetail' src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/82471672.jpg?k=095b3828a7d14cdc63a7d603e780faeae960d82ee350a2df777a92392330229c&o=&hp=1" /> 
             <img className='imagen-itemDetail' src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_627,q_auto,w_1200/itemimages/21/89/218941_v8.jpeg" />
-            <img className='imagen-itemDetail' src="http://iruna.hotels-argentina.net/data/Pics/OriginalPhoto/12826/1282665/1282665646/iruna-hotel-mar-del-plata-pic-4.JPEG" />
+            <img className='imagen-itemDetail' src="../../media/imagen-3.jpg" />
           </div>
         </div>
     </div>
