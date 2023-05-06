@@ -33,10 +33,6 @@ margin-bottom: 50px;
   width: 400px;
 }
 
-.logo {
-  width: 90px;
-  margin-left: 30px;
-}
 
 .imagenes {
   display: flex;
@@ -47,100 +43,8 @@ margin-bottom: 50px;
   width: 1220px;
   margin-bottom: 10px;
 }
-.navbar {
-  display: flex;
-  
-  align-items: center;
-  height: 70px;
-}
-
-.navbar-links {
-  padding-left: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  
-}
-
-.navbar-left {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100%;
-}
-
-.opcion1 {
-  padding-left: 80px;
-}
-
-.opcion2 {
-  padding-left: 160px;
-}
 
 
-.up {
-  background-color: black;
-}
-
-.down {
-  color: black;
-}
-
-.navbar-points {
-  color: aliceblue;
-  font-size: 20px;
-  cursor: pointer;
-  height: 100%;
-  padding-block: auto;
-  display: flex;
-  align-items: center;
-  padding-inline: 25px;
-}
-
-.navbar-pointer {
-  color: black;
-  font-size: 20px;
-  cursor: pointer;
-  height: 100%;
-  padding-block: auto;
-  display: flex;
-  align-items: center;
-  padding-inline: 25px;
-  padding-block: 20px;
-}
-
-
-.navbar-hover {
-  color: black;
-  background-color: white;
-  font-size: 20px;
-  cursor: pointer;
-  height: 100%;
-  padding-block: auto;
-  display: flex;
-  align-items: center;
-  padding-inline: 25px;
-}
-
-.navbar-pointer:hover {
-  text-decoration: underline;
-}
-
-
-
-.navbar-points:hover {
-  background-color: aliceblue;
-  color: black;
-}
-
-.inactive {
-  display: none;
-}
-
-.active {
-  display: contents;
-}
 
 
  .container-products {
@@ -151,17 +55,6 @@ margin-bottom: 50px;
   padding-block: 40px;
   padding-inline: 30px;
 }
-
-
- .link {
-  text-decoration: none;
-  height: 100%;
- }
-
- .link:hover {
-  background-color: aliceblue;
-  color: black;
- }
 
  .ItemListContainer {
   display: flex;
@@ -220,12 +113,8 @@ margin-bottom: 50px;
 
  .div-filtros {
   background-color: rgba(47, 45, 42, 0.441);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding-top: 20px;
-  padding-bottom: 150px;
-
+  padding-right: 50px;
 }
 
 
@@ -234,6 +123,8 @@ margin-bottom: 50px;
   margin-right: 0;
   display: flex;
   gap: 10px;
+  align-items: center;
+  
  }
 
  .indicador {
@@ -278,6 +169,8 @@ margin-bottom: 50px;
   color: rgba(88, 14, 14, 0.432);
  }
 
- .padding {
-  padding-right: 50px;
+
+
+ .particularidades {
+  padding-top: 50px;
  }

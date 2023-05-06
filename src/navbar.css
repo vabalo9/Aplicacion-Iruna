@@ -1,0 +1,42 @@
+ .navbar {
+    background-color: black;
+  }
+
+
+
+  .logo {
+    width: 90px;
+    margin-left: 30px;
+  }
+  
+  .enlace {
+    text-decoration: none;
+    color:var(--bs-nav-link-hover-color);
+    
+  }
+
+  .dropdown-item {
+    background-color: black;
+  } 
+
+   .dropdown-item:hover {
+    background-color: black; 
+  } 
+
+   .dropdown-menu {
+    background-color: black;
+  }
+
+  .encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .nav-item {
+    padding-inline: 10px;
+    font-size: 20px;
+  }
+
+ 

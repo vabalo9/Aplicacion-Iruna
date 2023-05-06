@@ -159,8 +159,8 @@ const ItemListContainer = () => {
 
   return (
     <>
-    <div className={ categoria ==="ISTE" || categoria ==="ISTE" || categoria ==="ITSTE" || categoria ==="ISVM" ? 'ItemListContenedor':'ItemListContainer'}>
-      <div className='div-filtros'>
+    <div className={ categoria ==="ISTE" || categoria ==="ISTE" || categoria ==="ITSTE" || categoria ==="ISVM" || categoria==="IDEP" ? 'ItemListContenedor':'ItemListContainer'}>
+      <div  className={categoria==="ISTE" || categoria==="ITSTE" || categoria==="IDEP" || categoria==="ISVM" ? 'invisible':'div-filtros'}>
         { categoria === "ITSU" || categoria === "ITWS" ?
         <FiltrosITSU filtrarvistaContraFrente={filtrarvistaContraFrente} />
 

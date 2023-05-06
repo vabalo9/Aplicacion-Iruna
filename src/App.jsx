@@ -1,17 +1,20 @@
 import { Routes, Route} from "react-router-dom"
 import './archivo.css'
 import './App.css'
-import NavBar from './Components/NavBar'
+import './navbar.css'
 import Prueba from './Components/Prueba'
 import ItemListContainer from "./Components/ItemListContainer"
 import ItemDetailContainer from "./Components/ItemDetailContainer"
+import BootstrapNavbar from "./Components/BootstrapNavbar"
 
 function App() {
   
 
   return (
     <div className="App">
-      <NavBar />
+
+
+      < BootstrapNavbar />
 
       <Routes>
         <Route exact path="/" element={<Prueba/>}/>

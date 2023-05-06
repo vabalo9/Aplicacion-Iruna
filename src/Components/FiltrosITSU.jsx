@@ -12,7 +12,7 @@ const FiltrosITSU = ({filtrarvistaContraFrente}) => {
       <div className={categoria == "ITWS" ? 'div-triple' : "invisible" }>
         <h1 className='indicador'>Filtros para aplicar</h1>
         <div className= 'filtros margen' >
-          <h2>Vista contra frente al mar</h2>
+          <h5>Vista contra frente al mar</h5>
           <Switch id="contra-frente" checked={false} onChange={filtrarvistaContraFrente} />
 
         </div>

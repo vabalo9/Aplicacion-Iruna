@@ -10,21 +10,21 @@ const FiltrosIDST = ({filtrarInterna, filtrarDucha, filtrarDepartamento, filtrar
     <>
     <div>
       <p className='indicador'>Filtros para aplicar</p>
-      <div className= {categoria =="IDST" || categoria == "IDWSST" ? "invisible":"filtros"} >
-        <h2>Habitaciones convertibles en departamento</h2>
-        <Switch id="switch-departamento" checked={false} onChange={filtrarDepartamento} />
-      </div>
       <div className={categoria=== "IDWST" ? "invisible" : 'filtros'} >
-        <h2>Baño con ventilación</h2>
+        <h5>Baño con ventilación</h5>
         <Switch id="switch-activo1" checked={false} onChange={filtrarInterna} />
       </div>
       <div className= {categoria=="IDST" || categoria=== "IDWST" ? "filtros" : "invisible"}  >
-        <h2>Habitaciones con ducha</h2>
+        <h5>Habitaciones con ducha</h5>
         <Switch id="switch-ducha" checked={false} onChange={filtrarDucha} />
       </div>
       <div className= {categoria =="IDST" || categoria == "IDWSST" ? "invisible":'filtros margen'} >
-            <h2>Vista contra frente al mar</h2>
+            <h5>Vista contra frente al mar</h5>
             <Switch id="contra-frente" checked={false} onChange={filtrarvistaContraFrente} />
+      </div>
+      <div className= {categoria =="IDST" || categoria == "IDWSST" ? "invisible":"filtros"} >
+        <h5>Habitaciones convertibles en departamento</h5>
+        <Switch id="switch-departamento" checked={false} onChange={filtrarDepartamento} />
       </div>
     </div>
     
