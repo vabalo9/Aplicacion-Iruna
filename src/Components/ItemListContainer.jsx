@@ -6,12 +6,13 @@ import FiltrosIDVM from './FiltrosIDVM';
 import Ejemplo from './Ejemplo';
 import FiltrosIDST from './FiltrosIDST';
 import FiltrosIDEP from './FiltrosIDEP';
+import FiltrosIDSST from './FiltrosIDSST';
 
 
 const habitaciones =[
     {habitacion:118, categoria:"IDST"},
     {habitacion:126, categoria:"IDST"},
-    {habitacion:525, categoria:"IDST",interna:true, ducha:true, detalles:["Es una habitación bastante amplia","Se ve el mar si uno se sienta en la cama"] },
+    {habitacion:525, categoria:"IDST", vista:"Al mar de contrafrente", ducha:true, detalles:["Es una habitación bastante amplia","Se ve el mar si uno se sienta en la cama"] },
     {habitacion:327, categoria:"IDST"},
     {habitacion:426, categoria:"IDST"},
     {habitacion:226, categoria:"IDST"},
@@ -30,34 +31,40 @@ const habitaciones =[
     {habitacion:427, categoria:"IDWST"},
     {habitacion:218, categoria:"IDWST"},
 
-    {habitacion:104, categoria:"IDSST", departamento:true, detalles:["Se hace junto con la habitacion 103 el departemento B"]},
-    {habitacion:519, id:4,  categoria:"IDSST", interna:true, vista:"Pulmon interno del Hotel", detalles:["Queda al lado del office de las mucamas"]},
-    {habitacion:119, categoria:"IDSST", interna:true},
-    {habitacion:219, categoria:"IDSST", interna:true},
-    {habitacion:319, categoria:"IDSST", interna:true},
-    {habitacion:419, categoria:"IDSST", interna:true},
-    {habitacion:120, categoria:"IDSST", interna:true},
-    {habitacion:123, categoria:"IDSST",interna:true,},
-    {habitacion:124, categoria:"IDSST"},
-    {habitacion:220, categoria:"IDSST", interna:true},
-    {habitacion:420, categoria:"IDSST", interna:true},
-    {habitacion:520, categoria:"IDSST", interna:true},
-    {habitacion:523, categoria:"IDSST",interna:true, vista:"Al mar de contrafrente",},
-    {habitacion:524, categoria:"IDSST",  vista:"Al mar de contrafrente", detalles:["Tiene la pared en diagonal, Vista al mar de contrafrente"]},
-    {habitacion:423, categoria:"IDSST",interna:true, vista:"Al mar de contrafrente"},
-    {habitacion:424, categoria:"IDSST", departamento:true, detalles:["Se hace departamento con 425"]},
-    {habitacion:223, categoria:"IDSST",interna:true,},
-    {habitacion:224, categoria:"IDSST"},
-    {habitacion:323, categoria:"IDSST",interna:true,},
-    {habitacion:324, categoria:"IDSST", departamento:true},
-    {habitacion:407, categoria:"IDSST", vista:"Pulmon interno cerrado"},
-    {habitacion:204, categoria:"IDSST"},
+    {habitacion:104, categoria:"IDST", departamento:true, detalles:["Se hace junto con la habitacion 103 el departemento B"]},
+    {habitacion:519, id:4,  categoria:"IDST", interna:true, vista:"Pulmon interno del Hotel", detalles:["Queda al lado del office de las mucamas"]},
+    {habitacion:119, categoria:"IDST", interna:true},
+    {habitacion:219, categoria:"IDST", interna:true},
+    {habitacion:319, categoria:"IDST", interna:true},
+    {habitacion:419, categoria:"IDST", interna:true},
+    {habitacion:120, categoria:"IDST", interna:true},
+    {habitacion:123, categoria:"IDST",interna:true,},
+    {habitacion:124, categoria:"IDST"},
+    {habitacion:220, categoria:"IDST", interna:true},
+    {habitacion:420, categoria:"IDST", interna:true},
+    {habitacion:520, categoria:"IDST", interna:true},
+    {habitacion:523, categoria:"IDST",interna:true, vista:"Al mar de contrafrente",},
+    {habitacion:524, categoria:"IDST",  vista:"Al mar de contrafrente", detalles:["Tiene la pared en diagonal, Vista al mar de contrafrente"]},
+    {habitacion:423, categoria:"IDST",interna:true, vista:"Al mar de contrafrente"},
+    {habitacion:424, categoria:"IDST", departamento:true, detalles:["Se hace departamento con 425"]},
+    {habitacion:223, categoria:"IDST",interna:true,},
+    {habitacion:224, categoria:"IDST"},
+    {habitacion:323, categoria:"IDST",interna:true,},
+    {habitacion:324, categoria:"IDST", departamento:true},
+    {habitacion:407, categoria:"IDST", vista:"Pulmon interno cerrado"},
+    {habitacion:204, categoria:"IDST"},
 
-    {habitacion:103, categoria:"IDWSST", detalles:["Se hace junto con la habitacion 104 el departemento B"]},
-    {habitacion:203, categoria:"IDWSST", detalles:["Junto a 204 se hace el departamento G"]},
-    {habitacion:408, categoria:"IDWSST", interna:true, detalles:["Esta al lado de la oficina de la Gobernanta"]},
-    {habitacion:308, categoria:"IDWSST"},
-    {habitacion:320, categoria:"IDWSST", interna:true},
+    {habitacion:103, categoria:"IDWST", detalles:["Se hace junto con la habitacion 104 el departemento B"]},
+    {habitacion:203, categoria:"IDWST", detalles:["Junto a 204 se hace el departamento G"]},
+    {habitacion:408, categoria:"IDWST", interna:true, detalles:["Esta al lado de la oficina de la Gobernanta"]},
+    {habitacion:308, categoria:"IDWST"},
+    {habitacion:320, categoria:"IDWST", interna:true},
+
+    {habitacion:121, categoria:"IDSST", interna:true},
+    {habitacion:221, categoria:"IDSST", interna:true},
+    {habitacion:321, categoria:"IDSST", interna:true},
+    {habitacion:421, categoria:"IDSST", interna:true},
+    {habitacion:521, categoria:"IDSST", interna:true},
 
     {habitacion:112, id:3, convertible:true,   categoria:"IDVM", vista:"Frente del hotel", detalles:["Cuenta con dos sillones pequeños"]},
     {habitacion:114, categoria:"IDVM", interna:true, vista:"Frente del hotel"},
@@ -159,17 +166,20 @@ const ItemListContainer = () => {
 
   return (
     <>
-    <div className={ categoria ==="ISTE" || categoria ==="ISTE" || categoria ==="ITSTE" || categoria ==="ISVM" || categoria==="IDEP" ? 'ItemListContenedor':'ItemListContainer'}>
-      <div  className={categoria==="ISTE" || categoria==="ITSTE" || categoria==="IDEP" || categoria==="ISVM" ? 'invisible':'div-filtros'}>
+    <div className={ categoria ==="ISTE"  || categoria ==="ITSTE" || categoria ==="ISVM"  ? 'ItemListContenedor':'ItemListContainer'}>
+      <div  className={categoria==="ISTE" || categoria==="ITSTE"  || categoria==="ISVM" ? 'invisible':'div-filtros'}>
         { categoria === "ITSU" || categoria === "ITWS" ?
         <FiltrosITSU filtrarvistaContraFrente={filtrarvistaContraFrente} />
 
-        : categoria===  "IDWSST" || categoria===  "IDSST" || categoria==="IDST" || categoria=== "IDWST" ? 
+        :categoria==="IDST" || categoria=== "IDWST" ? 
         <FiltrosIDST filtrarConvertible={filtrarConvertible}
         filtrarvistaContraFrente={filtrarvistaContraFrente}
         filtrarInterna={filtrarInterna}
         filtrarDucha={filtrarDucha}
         filtrarDepartamento={filtrarDepartamento} />
+
+        :categoria==="IDSST"  ? 
+        <FiltrosIDSST />
 
         : categoria === "IDVM" || categoria === "IDWM" ? 
         <FiltrosIDVM  filtrarConvertible={filtrarConvertible}

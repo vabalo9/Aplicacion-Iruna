@@ -35,7 +35,8 @@ const BootstrapNavbar = () => {
           </a>
           <ul className="dropdown-menu">
             <li><a className="dropdown-item" ><Link className="nav-link navbar-dark" to ={`/categoria/${"IDSST"}`}>Superior Matrimonial</Link></a></li>
-            <li><a className="dropdown-item" > <Link className="nav-link navbar-dark" to ={`/categoria/${"IDWSST"}`}>Superior Doble Twin</Link></a></li>
+            <li><a className="dropdown-item"> <Link className="nav-link navbar-dark" to ={`/categoria/${"ITSU"}`}>Superior matrimonial mas cama</Link></a></li>
+            <li><a className="dropdown-item" > <Link className="nav-link navbar-dark" to ={`/categoria/${"ITWS"}`}>Triple twin superior</Link></a></li>
           </ul>
         </li>
         <li className="nav-item dropdown">
@@ -49,15 +50,7 @@ const BootstrapNavbar = () => {
           </ul>
         </li>
         
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Triple
-          </a>
-          <ul className="dropdown-menu">
-            <li><a className="dropdown-item"> <Link className="nav-link navbar-dark" to ={`/categoria/${"ITSU"}`}>Triple</Link></a></li>
-            <li><a className="dropdown-item"> <Link className="nav-link navbar-dark" to ={`/categoria/${"ITWS"}`}>  Triple twin</Link></a></li>
-          </ul>
-        </li>
+        
         
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="true">
