@@ -56,7 +56,7 @@ const BootstrapNavbar = () => {
           <a className="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="true">
             Junior Suite
           </a>
-          <ul class="dropdown-menu">
+          <ul className="dropdown-menu">
             <li><a className="dropdown-item"> <Link className="nav-link navbar-dark" to ={`/categoria/${"ISTE"}`}>Junior Suite</Link></a></li>
             <li><a className="dropdown-item"> <Link className="nav-link navbar-dark" to ={`/categoria/${"ITSTE"}`}> Triple Junior Suite</Link></a></li>
           </ul>

@@ -174,4 +174,30 @@ margin-bottom: 50px;
   padding-top: 50px;
  }
 
- 
+ .div-filtro-imagenes {
+  display: flex;
+  gap: 10px;
+}
+
+.filtro-imagen {
+  width: 250px;
+  
+}
+
+.arreglo-vacio {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.arreglo-titulo {
+  font-size: 30px;
+  color: rgba(28, 3, 3, 0.936);
+}
+
+.vidriera {
+  margin-left: 50px;
+}
