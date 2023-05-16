@@ -8,6 +8,7 @@ import FiltrosIDST from './FiltrosIDST';
 import FiltrosIDEP from './FiltrosIDEP';
 import FiltrosIDSST from './FiltrosIDSST';
 import habitaciones from '../../data.json';
+import FiltrosIste from './FiltrosIste';
 
 const ItemListContainer = () => {
   
@@ -59,9 +60,9 @@ const ItemListContainer = () => {
 
   return (
     <>
-    <div className={ categoria ==="ISTE"  || categoria ==="ITSTE" || categoria ==="ISVM"  ? 'ItemListContenedor':'ItemListContainer'}>
-      <div  className={categoria==="ISTE" || categoria==="ITSTE"  || categoria==="ISVM" ? 'invisible':'div-filtros'}>
-        { categoria === "ITSU" || categoria === "ITWS" ?
+    <div className={categoria ==="ISTE" || categoria ==="ISVM"  ? 'ItemListContenedor':'ItemListContainer'}>
+      <div  className={categoria==="ISTE"  || categoria==="ISVM" ? 'invisible':'div-filtros'}>
+        { categoria === "ITSU" || categoria === "ISTE" || categoria === "ITWS" ?
         <FiltrosITSU filtrarvistaContraFrente={filtrarvistaContraFrente} />
 
         :categoria==="IDST" || categoria=== "IDWST" ? 
@@ -80,6 +81,8 @@ const ItemListContainer = () => {
         filtrarInterna={filtrarInterna}/>
         : categoria == "IDEP" ?
         <FiltrosIDEP />
+        : categoria == "ITSTE" ?
+        <FiltrosIste />
         : <Ejemplo />
         }
       </div>

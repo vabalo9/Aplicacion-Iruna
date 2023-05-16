@@ -29,6 +29,7 @@ const FiltrosIDVM = ({filtrarConvertible, filtrarDucha, filtrarInterna}) => {
         <ul>
           <li className={categoria =="IDVM"?'item-detalles':"invisible"}>la linea '12 tiene dos sillones</li>
           <li className={categoria =="IDWM"?'item-detalles':"invisible"}>La 115 esta conectada con la 117</li>
+          <li className={categoria =="IDWM"?'item-detalles':"invisible"}>La 315 esta conectada con la 317</li>
           <li className={categoria =="IDWM"?'item-detalles':"invisible"}>La 115 en la puerta tiene una "D"</li>
           <li className={categoria =="IDVM"?'item-detalles':"invisible"}>la 215 esta conectada con la 217</li>
         </ul>

@@ -6,7 +6,8 @@
     },
     {
       "habitacion":126,
-      "categoria":"IDST"
+      "categoria":"IDST",
+      "interna":true
     },
     {
       "habitacion":525,
@@ -24,15 +25,19 @@
     },
     {
       "habitacion":426,
-      "categoria":"IDST"
+      "categoria":"IDST",
+      "interna":true
     },
     {
       "habitacion":226,
-      "categoria":"IDST"
+      "categoria":"IDST",
+      "interna":true
     },
     {
       "habitacion":326,
-      "categoria":"IDST"
+      "categoria":"IDST",
+      "interna":true
+      
     },
     {
       "habitacion":526,
@@ -45,6 +50,7 @@
     {
       "habitacion":125,
       "categoria":"IDWST",
+      "ducha":true,
       "detalles":[
         "El frigobar esta dentro del armario"
       ]
@@ -60,6 +66,7 @@
       "categoria":"IDWST",
       "ducha":true,
       "departamento":true,
+      "vista":"Al mar de contrafrente",
       "detalles":[
         "Se hace departamento con 324"
       ]
@@ -157,7 +164,8 @@
     },
     {
       "habitacion":124,
-      "categoria":"IDST"
+      "categoria":"IDST",
+      "interna":true
     },
     {
       "habitacion":220,
@@ -183,6 +191,7 @@
     {
       "habitacion":524,
       "categoria":"IDST",
+      "interna":true,
       "vista":"Al mar de contrafrente",
       "detalles":[
         "Tiene la pared en diagonal, Vista al mar de contrafrente"
@@ -197,6 +206,7 @@
     {
       "habitacion":424,
       "categoria":"IDST",
+      "interna":true,
       "departamento":true,
       "detalles":[
         "Se hace departamento con 425"
@@ -209,22 +219,26 @@
     },
     {
       "habitacion":224,
-      "categoria":"IDST"
-    },
-    {
-      "habitacion":323,
       "categoria":"IDST",
       "interna":true
     },
     {
+      "habitacion":323,
+      "categoria":"IDST",
+      "interna":true,
+      "vista":"Al mar de contrafrente"
+    },
+    {
       "habitacion":324,
       "categoria":"IDST",
+      "interna":true,
       "departamento":true
     },
     {
       "habitacion":407,
       "categoria":"IDST",
-      "vista":"Pulmon interno cerrado"
+      "vista":"Pulmon interno cerrado",
+      "ducha":true
     },
     {
       "habitacion":204,
@@ -254,7 +268,8 @@
     },
     {
       "habitacion":308,
-      "categoria":"IDWST"
+      "categoria":"IDWST",
+      "interna":true
     },
     {
       "habitacion":320,
